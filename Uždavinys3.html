@@ -5,88 +5,86 @@
     <title>Uždavinys Nr.3</title>
     <meta charset="UTF-8">
     <style>
-      
         table {
             border-collapse: collapse;
-            table-layout: fixed;            
-        }        
+            table-layout: fixed;           
+        }
+
+        /* tr:nth-child(even) td:nth-child(even) { 
+            background-color: lightgrey; 
+        }
+
+        tr:nth-child(odd) td:nth-child(odd) { 
+            background-color: lightgrey; 
+        }
+
+        tr:nth-child(odd) td:nth-child(even) { 
+            background-color: rgb(240, 230, 140);             
+        }
+
+        tr:nth-child(even) td:nth-child(odd) { 
+            background-color: rgb(240, 230, 140);             
+        } */
 
         td {
             border: 1.5px solid black;
-            font-size: 3.9vw;            
+            font-size: 4.2vw;
+            text-align: center;              
+            position: static; 
+            background-clip: border-box;                
         }
 
-        td.f {
-            border: 1.5px solid;
+        td.f {            
             width: calc(80vw / 9);
             height: calc(80vw / 9);
             min-width: calc(80vw / 9);
-            min-height: calc(80vw / 9);
+            min-height: calc(80vw / 9);                
+            
         }
 
         td.bl {
-            background: rgb(169, 169, 169);
-            text-align: center;            
+            background: rgb(169, 169, 169);            
         }
 
         td.wh {
-            background: rgb(240,230,140);
-            text-align: center;
-            border: 1.5px solid;                        
+            background: rgb(240, 230, 140);            
         }
 
-        td.bl2 {
-            background: rgb(169, 169, 169);
-            text-align: center;
-            border: 1.5px solid black;
-            color: white;            
-        }
+        td.fwh {            
+            color: white;
+        }      
 
-        td.wh2 {
-            background: rgb(240,230,140);
-            text-align: center;
-            border: 1.5px solid black;
-            color: white;                        
-        }
-        
-        td.sm {
-            text-align: center;            
-            width: calc(80vw / 9);
-            height: calc(80vw / 9 / 2);
-            min-width: calc(80vw / 9);
-            min-height: calc(80vw / 9 / 2);            
-        }
-
-        td.sm2 {
-            text-align: center;
-            transform: rotate(270deg);
-            width: calc(80vw / 9 / 2);
-            height: calc(80vw / 9);
-            min-width: calc(80vw / 9 / 2);
-            min-height: calc(80vw / 9);
-        }
-
-        td.sm3 {
-            text-align: center;
-            transform: rotate(180deg);
+        td.sm {            
             width: calc(80vw / 9);
             height: calc(80vw / 9 / 2);
             min-width: calc(80vw / 9);
             min-height: calc(80vw / 9 / 2);
         }
 
-        td.sm4 {
-            text-align: center;            
+        td.r3 {
+            transform: rotate(270deg);
+            background-clip: border-box;
+        }
+
+        td.r2 {
+            transform: rotate(180deg);            
+        }
+
+        td.r1 {
             transform: rotate(90deg);
+        }
+
+        td.lr {
             width: calc(80vw / 9 / 2);
             height: calc(80vw / 9);
             min-width: calc(80vw / 9 / 2);
             min-height: calc(80vw / 9);
         }
-        
+
         h1 {
+            width: 80vw;
             text-align: center;
-            font-family: Geneva, Verdana, sans-serif;
+            font-family: Verdana, sans-serif;
         }
     </style>
 </head>
@@ -107,31 +105,63 @@
             <td></td>
         </tr>
         <tr>
-            <td class="sm2">1</td>
-            <td class="wh f">&#9820</td>
-            <td class="bl f">&#9822</td>
-            <td class="wh f">&#9821</td>
-            <td class="bl f">&#9819</td>
-            <td class="wh f">&#9818</td>
-            <td class="bl f">&#9821</td>
-            <td class="wh f">&#9822</td>
-            <td class="bl f">&#9820</td>
-            <td class="sm4">1</td>
+            <td class="r1 lr">1</td>
+            <td class="wh f">
+                <div>&#9820</div>
+            </td>
+            <td class="bl f">
+                <div>&#9822</div>
+            </td>
+            <td class="wh f">
+                <div>&#9821</div>
+            </td>
+            <td class="bl f">
+                <div>&#9819</div>
+            </td>
+            <td class="wh f">
+                <div>&#9818</div>
+            </td>
+            <td class="bl f">
+                <div>&#9821</div>
+            </td>
+            <td class="wh f">
+                <div>&#9822</div>
+            </td>
+            <td class="bl f">
+                <div>&#9820</div>
+            </td>
+            <td class="r1 lr">1</td>
         </tr>
         <tr>
-            <td class="sm2">2</td>
-            <td class="bl f">&#9823</td>
-            <td class="wh f">&#9823</td>
-            <td class="bl f">&#9823</td>
-            <td class="wh f">&#9823</td>
-            <td class="bl f">&#9823</td>
-            <td class="wh f">&#9823</td>
-            <td class="bl f">&#9823</td>
-            <td class="wh f">&#9823</td>
-            <td class="sm4">2</td>
+            <td class="r1 lr">2</td>
+            <td class="bl f">
+                <div>&#9823</div>
+            </td>
+            <td class="wh f">
+                <div>&#9823</div>
+            </td>
+            <td class="bl f">
+                <div>&#9823</div>
+            </td>
+            <td class="wh f">
+                <div>&#9823</div>
+            </td>
+            <td class="bl f">
+                <div>&#9823</div>
+            </td>
+            <td class="wh f">
+                <div>&#9823</div>
+            </td>
+            <td class="bl f">
+                <div>&#9823</div>
+            </td>
+            <td class="wh f">
+                <div>&#9823</div>
+            </td>
+            <td class="r1 lr">2</td>
         </tr>
         <tr>
-            <td class="sm2">3</td>
+            <td class="r1 lr">3</td>
             <td class="wh f"></td>
             <td class="bl f"></td>
             <td class="wh f"></td>
@@ -140,10 +170,10 @@
             <td class="bl f"></td>
             <td class="wh f"></td>
             <td class="bl f"></td>
-            <td class="sm4">3</td>
+            <td class="r1 lr">3</td>
         </tr>
         <tr>
-            <td class="sm2">4</td>
+            <td class="r1 lr">4</td>
             <td class="bl f"></td>
             <td class="wh f"></td>
             <td class="bl f"></td>
@@ -152,10 +182,10 @@
             <td class="wh f"></td>
             <td class="bl f"></td>
             <td class="wh f"></td>
-            <td class="sm4">4</td>
+            <td class="r1 lr">4</td>
         </tr>
         <tr>
-            <td class="sm2">5</td>
+            <td class="r1 lr">5</td>
             <td class="wh f"></td>
             <td class="bl f"></td>
             <td class="wh f"></td>
@@ -164,10 +194,10 @@
             <td class="bl f"></td>
             <td class="wh f"></td>
             <td class="bl f"></td>
-            <td class="sm4">5</td>
+            <td class="r1 lr">5</td>
         </tr>
         <tr>
-            <td class="sm2">6</td>
+            <td class="r1 lr">6</td>
             <td class="bl f"></td>
             <td class="wh f"></td>
             <td class="bl f"></td>
@@ -176,42 +206,74 @@
             <td class="wh f"></td>
             <td class="bl f"></td>
             <td class="wh f"></td>
-            <td class="sm4">6</td>
+            <td class="r1 lr">6</td>
         </tr>
         <tr>
-            <td class="sm2">7</td>
-            <td class="wh2 f">&#9823</td>
-            <td class="bl2 f">&#9823</td>
-            <td class="wh2 f">&#9823</td>
-            <td class="bl2 f">&#9823</td>
-            <td class="wh2 f">&#9823</td>
-            <td class="bl2 f">&#9823</td>
-            <td class="wh2 f">&#9823</td>
-            <td class="bl2 f">&#9823</td>
-            <td class="sm4">7</td>
+            <td class="r1 lr">7</td>
+            <td class="wh f fwh">
+                <div>&#9823</div>
+            </td>
+            <td class="bl f fwh">
+                <div>&#9823</div>
+            </td>
+            <td class="wh f fwh">
+                <div>&#9823</div>
+            </td>
+            <td class="bl f fwh">
+                <div>&#9823</div>
+            </td>
+            <td class="wh f fwh">
+                <div>&#9823</div>
+            </td>
+            <td class="bl f fwh">
+                <div>&#9823</div>
+            </td>
+            <td class="wh f fwh">
+                <div>&#9823</div>
+            </td>
+            <td class="bl f fwh">
+                <div>&#9823</div>
+            </td>
+            <td class="r1 lr">7</td>
         </tr>
         <tr>
-            <td class="sm2">8</td>
-            <td class="bl2 f">&#9820</td>
-            <td class="wh2 f">&#9822</td>
-            <td class="bl2 f">&#9821</td>
-            <td class="wh2 f">&#9819</td>
-            <td class="bl2 f">&#9818</td>
-            <td class="wh2 f">&#9821</td>
-            <td class="bl2 f">&#9822</td>
-            <td class="wh2 f">&#9820</td>
-            <td class="sm4">8</td>
+            <td class="r1 lr">8</td>
+            <td class="bl f fwh">
+                <div>&#9820</div>
+            </td>
+            <td class="wh f fwh">
+                <div>&#9822</div>
+            </td>
+            <td class="bl f fwh">
+                <div>&#9821</div>
+            </td>
+            <td class="wh f fwh">
+                <div>&#9819</div>
+            </td>
+            <td class="bl f fwh">
+                <div>&#9818</div>
+            </td>
+            <td class="wh f fwh">
+                <div>&#9821</div>
+            </td>
+            <td class="bl f fwh">
+                <div>&#9822</div>
+            </td>
+            <td class="wh f fwh">
+                <div>&#9820</div>
+            </td>
+            <td class="r1 lr">8</td>
         </tr>
         <tr>
             <td></td>
-            <td class="sm3">A</td>
-            <td class="sm3">B</td>
-            <td class="sm3">C</td>
-            <td class="sm3">D</td>
-            <td class="sm3">E</td>
-            <td class="sm3">F</td>
-            <td class="sm3">G</td>
-            <td class="sm3">H</td>
+            <td class="sm r2">A</td>
+            <td class="sm r2">B</td>
+            <td class="sm r2">C</td>
+            <td class="sm r2">D</td>
+            <td class="sm r2">E</td>
+            <td class="sm r2">F</td>
+            <td class="sm r2">G</td>
+            <td class="sm r2">H</td>
             <td></td>
         </tr>
     </table>
